@@ -162,3 +162,7 @@ cython_debug/
 #.idea/
 .DS_Store
 .idea/999-llama2.iml
+download/model-00001-of-00002.safetensors
+download/model-00002-of-00002.safetensors
+download/pytorch_model-00001-of-00002.bin
+download/pytorch_model-00002-of-00002.bin
