@@ -6,6 +6,8 @@ __pycache__/
 # C extensions
 *.so
 
+*.pth
+
 idea/
 
 # Distribution / packaging
@@ -166,3 +168,5 @@ download/model-00001-of-00002.safetensors
 download/model-00002-of-00002.safetensors
 download/pytorch_model-00001-of-00002.bin
 download/pytorch_model-00002-of-00002.bin
+llama-2-7b-chat/consolidated.00.pth
+llama-2-7b/consolidated.00.pth
