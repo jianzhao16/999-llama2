@@ -8,6 +8,8 @@ __pycache__/
 
 *.pth
 
+*.bin
+
 idea/
 
 # Distribution / packaging
@@ -172,3 +174,4 @@ llama-2-7b-chat/consolidated.00.pth
 llama-2-7b/consolidated.00.pth
 llama-2-7b-chat/consolidated.00.pth
 llama-2-7b/consolidated.00.pth
+hf-llama2/finetuned_falcon-20240531-good/adapter_model.bin

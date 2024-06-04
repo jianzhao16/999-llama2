@@ -1,0 +1,67 @@
+bb_config load is done
+model load is done
+A 25-year-old female presents with swelling, pain, and inability to bear weight on her left ankle following a fall during a basketball game where she landed awkwardly on her foot. The pain is on the outer side of her ankle. What is the likely diagnosis and next steps? 
+
+A. Acute ankle sprain
+B. Chronic ankle instability
+C. Fracture
+D. Torn ligament
+E. Other
+
+Answer: A. Acute ankle sprain
+
+Rationale: The patient's symptoms of swelling, pain, and inability to bear weight on the left ankle following a fall are consistent with an acute ankle sprain. The pain is localized
+test is done
+*****************************************
+Preparing Falcon model
+Preparing Lora model parameters
+PEFT model Lora done
+trainable params: 0 || all params: 3500412928 || trainable%: 0.0
+tokens is done
+*****************************************
+Dataset({
+    features: ['input_ids', 'attention_mask'],
+    num_rows: 16
+})
+*****************************************
+DatasetDict({
+    train: Dataset({
+        features: ['input_ids', 'attention_mask'],
+        num_rows: 12
+    })
+    test: Dataset({
+        features: ['input_ids', 'attention_mask'],
+        num_rows: 4
+    })
+})
+*****************************************
+*****************************************
+trainer is begin
+{'train_runtime': 40.765, 'train_samples_per_second': 0.883, 'train_steps_per_second': 0.074, 'train_loss': 0.8739641507466634, 'epoch': 2.0}
+trainer is done
+save begin
+Model saved to ./myllama2model
+A 25-year-old female presents with swelling, pain, and inability to bear weight on her left ankle following a fall during a basketball game where she landed awkwardly on her foot. The pain is on the outer side of her ankle. What is the likely diagnosis and next steps?
+
+A. Sprained ankle
+B. Fractured ankle
+C. Torn ligament
+D. Dislocated ankle
+E. Other (please specify)
+
+The likely diagnosis is A. Sprained ankle. The patient's symptoms of swelling, pain, and inability to bear weight
+where is the food service nearby?
+ nobody is around to answer the phone.
+I'm not sure if you can help me, but I'm in a bit of a bind.
+I'm at the airport and I need to get to the food service area, but I can't find it.
+I've been wandering around for what feels like hours, but every
+Begin testing fine-tuned model
+
+**************************************
+
+Enter your instruction (type 'exit' to finish): Empty instruction, please try again.
+
+**************************************
+
+Enter your instruction (type 'exit' to finish): Interrupted by user.
+Session Ended.
