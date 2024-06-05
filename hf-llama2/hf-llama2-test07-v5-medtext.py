@@ -20,13 +20,17 @@ import time
 print('init')
 torch.cuda.empty_cache()
 
-#os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'max_split_size_mb:128'
+os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'max_split_size_mb:128'
 max_length_set = 256
 
 # Initialize Hugging Face authentication
-#hf_auth = "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"
+# custom
+#hf_auth = "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"
+
+# write
+hf_auth ='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'
 #login(token=hf_auth)
-#login(token=hf_auth,add_to_git_credential=True)
+login(token=hf_auth,add_to_git_credential=True)
 
 # Path to the model
 #model = "meta-llama/Meta-Llama-3-8B-Instruct"
@@ -41,6 +45,7 @@ print(model)
 # model = "/home/tus35240/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-chat-hf/snapshots/f5db02db724555f92da89c216ac04704f23d4590"
 # model = "ybelkada/falcon-7b-sharded-bf16"
 
+#tokenizer = AutoTokenizer.from_pretrained(model)
 tokenizer = AutoTokenizer.from_pretrained(model, trust_remote_code=True)
 tokenizer.pad_token = tokenizer.eos_token
 

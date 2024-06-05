@@ -24,9 +24,13 @@ os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'max_split_size_mb:128'
 max_length_set = 256
 
 # Initialize Hugging Face authentication
-#hf_auth = "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"
-#login(token=hf_auth)
-#login(token=hf_auth,add_to_git_credential=True)
+# custom
+#hf_auth = "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"
+
+# write
+hf_auth ='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'
+login(token=hf_auth,add_to_git_credential=True)
+
 
 # Path to the model
 #model = "meta-llama/Meta-Llama-3-8B-Instruct"
@@ -339,12 +343,12 @@ tokenizer.save_pretrained(output_dir)
 # Save the model configuration
 model_to_save.config.save_pretrained(output_dir)
 
-print(f"Model saved to {output_dir}")
+print(f"Model using sav_pretrained()  saved to {output_dir}")
 
-#output_dir_v2 = "./myllama2modelv2"
-#print('Saving the model and tokenizer...')
-#model_to_save.save_pretrained(output_dir_v2)
-#tokenizer.save_pretrained(output_dir_v2)
+output_dir_v2 = "./myllama2modelv2"
+print('Saving the model and tokenizer...')
+model_to_save.save_pretrained(output_dir_v2)
+tokenizer.save_pretrained(output_dir_v2)
 
 #trainer.model.save_pretrained("./finetuned_falcon")
 #trainer.save_model("./myllama2model")
