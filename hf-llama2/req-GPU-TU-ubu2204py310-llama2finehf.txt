@@ -31,7 +31,7 @@ langchain-text-splitters==0.2.0
 langsmith==0.1.61
 lit==18.1.4
 # Editable install with no version control (llama==0.0.1)
--e /home/tus35240/mydata/mygit/llama2
+#-e /home/tus35240/mydata/mygit/llama2
 MarkupSafe==2.1.5
 marshmallow==3.21.2
 mpmath==1.3.0
@@ -130,7 +130,7 @@ langchain-text-splitters==0.2.0
 langsmith==0.1.61
 lit==18.1.4
 # Editable install with no version control (llama==0.0.1)
--e /home/tus35240/mydata/mygit/llama2
+#-e /home/tus35240/mydata/mygit/llama2
 MarkupSafe==2.1.5
 marshmallow==3.21.2
 mpmath==1.3.0
