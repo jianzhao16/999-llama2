@@ -20,17 +20,13 @@ import time
 print('init')
 torch.cuda.empty_cache()
 
-os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'max_split_size_mb:128'
+#os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'max_split_size_mb:128'
 max_length_set = 256
 
 # Initialize Hugging Face authentication
-# custom
-#hf_auth = "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"
-
-# write
-hf_auth ='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'
-login(token=hf_auth,add_to_git_credential=True)
-
+#hf_auth = "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"
+#login(token=hf_auth)
+#login(token=hf_auth,add_to_git_credential=True)
 
 # Path to the model
 #model = "meta-llama/Meta-Llama-3-8B-Instruct"
@@ -330,7 +326,7 @@ print('trainer is done')
 #trainer.model.save_pretrained("./finetuned_falcon")
 print('save begin')
 # Define the path where you want to save the model
-output_dir = "./myllama2model"
+output_dir = "./myllama2model-ourdata"
 
 # Save the model weights using torch.save
 model_to_save = trainer.model.module if hasattr(trainer.model, 'module') else trainer.model
@@ -343,12 +339,15 @@ tokenizer.save_pretrained(output_dir)
 # Save the model configuration
 model_to_save.config.save_pretrained(output_dir)
 
-print(f"Model using sav_pretrained()  saved to {output_dir}")
+print(f"Model saved to {output_dir} done")
 
-output_dir_v2 = "./myllama2modelv2"
+
+
+output_dir_v2 = "./myllama2model-ourdata-v2"
 print('Saving the model and tokenizer...')
 model_to_save.save_pretrained(output_dir_v2)
 tokenizer.save_pretrained(output_dir_v2)
+print(f"Model saved to {output_dir_v2} done")
 
 #trainer.model.save_pretrained("./finetuned_falcon")
 #trainer.save_model("./myllama2model")

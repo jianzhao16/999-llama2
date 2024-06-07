@@ -62,6 +62,12 @@ print("model load is done")
 
 #base_model.to("cuda" if torch.cuda.is_available() else "cpu")
 
+print("Preparing gradient model")
+base_model.gradient_checkpointing_enable()
+base_model = prepare_model_for_int8_training(base_model)
+print("Preparing Lora model parameters")
+
+
 # Define and apply PEFT configuration (LoRA)
 lora_config = LoraConfig(
     r=4,
