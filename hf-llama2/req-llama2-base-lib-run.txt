@@ -1,0 +1,7 @@
+pip install transformers==4.31.0
+pip install accelerate==0.21.0
+pip install bitsandbytes==0.40.2
+pip install peft==0.5.0
+pip install datasets
+pip install einops
+pip install torch==2.0.1
