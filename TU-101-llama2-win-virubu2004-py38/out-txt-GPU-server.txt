@@ -1,0 +1,407 @@
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 19.76 seconds
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 12.55 seconds
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 10.88 seconds
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 9.74 seconds
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 13.31 seconds
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 10.69 seconds
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 21.60 seconds
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 14.27 seconds
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 15.27 seconds
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 10.44 seconds
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 31.50 seconds
+I believe the meaning of life is
+> to be happy. I believe we are all born with the potential to be happy. The meaning of life is to be happy, but the way to get there is not always easy.
+The meaning of life is to be happy. It is not always easy to be happy, but it is possible. I believe that
+
+==================================
+
+Simply put, the theory of relativity states that 
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 29.77 seconds
+I believe the meaning of life is
+> to be happy. I believe we are all born with the potential to be happy. The meaning of life is to be happy, but the way to get there is not always easy.
+The meaning of life is to be happy. It is not always easy to be happy, but it is possible. I believe that
+
+==================================
+
+Simply put, the theory of relativity states that 
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 31.43 seconds
+I believe the meaning of life is
+> to be happy. I believe we are all born with the potential to be happy. The meaning of life is to be happy, but the way to get there is not always easy.
+The meaning of life is to be happy. It is not always easy to be happy, but it is possible. I believe that
+
+==================================
+
+Simply put, the theory of relativity states that 
+> 1) time, space, and mass are relative, and 2) the speed of light is constant, regardless of the relative motion of the observer.
+Let’s look at the first point first.
+Relative Time and Space
+The theory of relativity is built on the idea that time and space are relative
+
+==================================
+
+A brief message congratulating the team on the launch:
+
+        Hi everyone,
+        
+        I just 
+> wanted to say a big congratulations to the team on the launch of the new website.
+
+        I think it looks fantastic and I'm sure it will be a huge success.
+
+        I look forward to working with you all on the next project.
+
+        Best wishes
+
+
+
+==================================
+
+Translate English to French:
+        
+        sea otter => loutre de mer
+        peppermint => menthe poivrée
+        plush girafe => girafe peluche
+        cheese =>
+> fromage
+        fish => poisson
+        giraffe => girafe
+        elephant => éléphant
+        cat => chat
+        giraffe => girafe
+        elephant => éléphant
+        cat => chat
+        giraffe => gira
+
+==================================
+
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 26.31 seconds
+I believe the meaning of life is
+> to be happy. I believe we are all born with the potential to be happy. The meaning of life is to be happy, but the way to get there is not always easy.
+The meaning of life is to be happy. It is not always easy to be happy, but it is possible. I believe that
+
+==================================
+
+Simply put, the theory of relativity states that 
+> 1) time, space, and mass are relative, and 2) the speed of light is constant, regardless of the relative motion of the observer.
+Let’s look at the first point first.
+Relative Time and Space
+The theory of relativity is built on the idea that time and space are relative
+
+==================================
+
+A brief message congratulating the team on the launch:
+
+        Hi everyone,
+        
+        I just 
+> wanted to say a big congratulations to the team on the launch of the new website.
+
+        I think it looks fantastic and I'm sure it will be a huge success.
+
+        I look forward to working with you all on the next project.
+
+        Best wishes
+
+
+
+==================================
+
+Translate English to French:
+        
+        sea otter => loutre de mer
+        peppermint => menthe poivrée
+        plush girafe => girafe peluche
+        cheese =>
+> fromage
+        fish => poisson
+        giraffe => girafe
+        elephant => éléphant
+        cat => chat
+        giraffe => girafe
+        elephant => éléphant
+        cat => chat
+        giraffe => gira
+
+==================================
+
+> initializing model parallel with size 2
+> initializing ddp with size 1
+> initializing pipeline with size 1
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 31.48 seconds
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 32.30 seconds
+I believe the meaning of life is
+> to be happy. I believe we are all born with the potential to be happy. The meaning of life is to be happy, but the way to get there is not always easy.
+The meaning of life is to be happy. It is not always easy to be happy, but it is possible. I believe that
+
+==================================
+
+Simply put, the theory of relativity states that 
+> 1) time, space, and mass are relative, and 2) the speed of light is constant, regardless of the relative motion of the observer.
+Let’s look at the first point first.
+Relative Time and Space
+The theory of relativity is built on the idea that time and space are relative
+
+==================================
+
+A brief message congratulating the team on the launch:
+
+        Hi everyone,
+        
+        I just 
+> wanted to say a big congratulations to the team on the launch of the new website.
+
+        I think it looks fantastic and I'm sure it will be a huge success.
+
+        I look forward to working with you all on the next project.
+
+        Best wishes
+
+
+
+==================================
+
+Translate English to French:
+        
+        sea otter => loutre de mer
+        peppermint => menthe poivrée
+        plush girafe => girafe peluche
+        cheese =>
+> fromage
+        fish => poisson
+        giraffe => girafe
+        elephant => éléphant
+        cat => chat
+        giraffe => girafe
+        elephant => éléphant
+        cat => chat
+        giraffe => gira
+
+==================================
+
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 27.46 seconds
+I believe the meaning of life is
+> to be happy. I believe we are all born with the potential to be happy. The meaning of life is to be happy, but the way to get there is not always easy.
+The meaning of life is to be happy. It is not always easy to be happy, but it is possible. I believe that
+
+==================================
+
+Simply put, the theory of relativity states that 
+> 1) time, space, and mass are relative, and 2) the speed of light is constant, regardless of the relative motion of the observer.
+Let’s look at the first point first.
+Relative Time and Space
+The theory of relativity is built on the idea that time and space are relative
+
+==================================
+
+A brief message congratulating the team on the launch:
+
+        Hi everyone,
+        
+        I just 
+> wanted to say a big congratulations to the team on the launch of the new website.
+
+        I think it looks fantastic and I'm sure it will be a huge success.
+
+        I look forward to working with you all on the next project.
+
+        Best wishes
+
+
+
+==================================
+
+Translate English to French:
+        
+        sea otter => loutre de mer
+        peppermint => menthe poivrée
+        plush girafe => girafe peluche
+        cheese =>
+> fromage
+        fish => poisson
+        giraffe => girafe
+        elephant => éléphant
+        cat => chat
+        giraffe => girafe
+        elephant => éléphant
+        cat => chat
+        giraffe => gira
+
+==================================
+
+Elapsed time: 5.76 seconds
+Inference Elapsed time: 5.76 seconds
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 30.03 seconds
+I believe the meaning of life is
+> to be happy. I believe we are all born with the potential to be happy. The meaning of life is to be happy, but the way to get there is not always easy.
+The meaning of life is to be happy. It is not always easy to be happy, but it is possible. I believe that
+
+==================================
+
+Simply put, the theory of relativity states that 
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 28.65 seconds
+I believe the meaning of life is
+> to be happy. I believe we are all born with the potential to be happy. The meaning of life is to be happy, but the way to get there is not always easy.
+The meaning of life is to be happy. It is not always easy to be happy, but it is possible. I believe that
+
+==================================
+
+Simply put, the theory of relativity states that 
+> 1) time, space, and mass are relative, and 2) the speed of light is constant, regardless of the relative motion of the observer.
+Let’s look at the first point first.
+Relative Time and Space
+The theory of relativity is built on the idea that time and space are relative
+
+==================================
+
+A brief message congratulating the team on the launch:
+
+        Hi everyone,
+        
+        I just 
+> wanted to say a big congratulations to the team on the launch of the new website.
+
+        I think it looks fantastic and I'm sure it will be a huge success.
+
+        I look forward to working with you all on the next project.
+
+        Best wishes
+
+
+
+==================================
+
+Translate English to French:
+        
+        sea otter => loutre de mer
+        peppermint => menthe poivrée
+        plush girafe => girafe peluche
+        cheese =>
+> fromage
+        fish => poisson
+        giraffe => girafe
+        elephant => éléphant
+        cat => chat
+        giraffe => girafe
+        elephant => éléphant
+        cat => chat
+        giraffe => gira
+
+==================================
+
+Elapsed time: 5.71 seconds
+Inference Elapsed time: 5.71 seconds
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 29.29 seconds
+Load Model Elapsed time: 30.23 seconds
+I believe the meaning of life is
+> to be happy. I believe we are all born with the potential to be happy. The meaning of life is to be happy, but the way to get there is not always easy.
+The meaning of life is to be happy. It is not always easy to be happy, but it is possible. I believe that
+
+==================================
+
+Simply put, the theory of relativity states that 
+> 1) time, space, and mass are relative, and 2) the speed of light is constant, regardless of the relative motion of the observer.
+Let’s look at the first point first.
+Relative Time and Space
+The theory of relativity is built on the idea that time and space are relative
+
+==================================
+
+A brief message congratulating the team on the launch:
+
+        Hi everyone,
+        
+        I just 
+> wanted to say a big congratulations to the team on the launch of the new website.
+
+        I think it looks fantastic and I'm sure it will be a huge success.
+
+        I look forward to working with you all on the next project.
+
+        Best wishes
+
+
+
+==================================
+
+Translate English to French:
+        
+        sea otter => loutre de mer
+        peppermint => menthe poivrée
+        plush girafe => girafe peluche
+        cheese =>
+> fromage
+        fish => poisson
+        giraffe => girafe
+        elephant => éléphant
+        cat => chat
+        giraffe => girafe
+        elephant => éléphant
+        cat => chat
+        giraffe => gira
+
+==================================
+
+Inference Elapsed time: 5.75 seconds
