@@ -37,8 +37,8 @@ login(token=hf_auth,add_to_git_credential=True)
 
 # Path to the model
 #model = "meta-llama/Meta-Llama-3-8B-Instruct"
-model  = 'Base-Llama-3-8B-Instruct'
-#model = 'Base-Llama-2-7b-chat-hf'
+model = 'Base-Llama-2-7b-chat-hf'
+#model = 'meta-llama/Llama-2-7b-chat-hf'
 print(model)
 # model_name = "/home/tus35240/.cache/huggingface/hub/models--meta-llama--Meta-Llama-3-8B/snapshots/62bd457b6fe961a42a631306577e622c83876cb6"
 
@@ -77,28 +77,52 @@ print("model load is done")
 # print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
 
+
 print('begin test some inputs in base model')
 print('**************************************')
 # Your input text
 #text_pad1 = "Question: What is the national bird of the United States? \n Answer: "
-text_pad1 = "A 25-year-old female presents with swelling, pain, and inability to bear weight on her left ankle following a fall during a basketball game where she landed awkwardly on her foot. The pain is on the outer side of her ankle. What is the likely diagnosis and next steps? "
+
+
+text_pad1 = "What is national bird of US?"
+
+
+def askonce(input_text):
+    print('\n\n')
+    print('###### Question Begin #####')
+    #global start_time, inputs, attention_mask, outputs, generated_text, end_time, elapsed_time
+    start_time = time.time()
+    # Tokenize the input
+    inputs = tokenizer(input_text, return_tensors="pt", padding=True).to("cuda:0")
+    # Set the attention mask
+    attention_mask = inputs["attention_mask"]
+    # Generate output with the specified attention mask and pad token id
+    outputs = falcon_model.generate(
+        inputs["input_ids"],
+        attention_mask=attention_mask,
+        max_new_tokens=100,
+        pad_token_id=tokenizer.eos_token_id
+    )
+    # Decode the generated output
+    generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"Inference Elapsed time: {elapsed_time:.2f} seconds")
+    print(generated_text)
+    print('###### Question End #####')
+    print('\n\n')
+
+askonce(text_pad1)
+
+
+text_pad2 = "What is PPD depression?"
 # Tokenize the input
-inputs = tokenizer(text_pad1, return_tensors="pt", padding=True).to("cuda:0")
+askonce(text_pad2)
 
-# Set the attention mask
-attention_mask = inputs["attention_mask"]
 
-# Generate output with the specified attention mask and pad token id
-outputs = falcon_model.generate(
-    inputs["input_ids"],
-    attention_mask=attention_mask,
-    max_new_tokens=100,
-    pad_token_id=tokenizer.eos_token_id
-)
 
-# Decode the generated output
-generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
-print(generated_text)
+text_pad3 = "How to prevent PPD depression?"
+askonce(text_pad3)
 
 print('test is done')
 print('*****************************************')
@@ -316,7 +340,11 @@ split_dataset
 print(split_dataset)
 
 
-print('*****************************************')
+print('*************** Training *******************')
+
+# Define the trainer of DDP
+lora_model= torch.nn.parallel.DataParallel(lora_model)
+
 trainer = Trainer(
     model=lora_model,
     args=training_args,
@@ -333,7 +361,7 @@ print('trainer is done')
 #trainer.model.save_pretrained("./finetuned_falcon")
 print('save begin')
 # Define the path where you want to save the model
-output_dir = "./myllama3model-ourdata"
+output_dir = "./myllama2model-ourdata"
 
 # Save the model weights using torch.save
 model_to_save = trainer.model.module if hasattr(trainer.model, 'module') else trainer.model
@@ -350,7 +378,7 @@ print(f"Model saved to {output_dir} done")
 
 
 
-output_dir_v2 = "./myllama3model-ourdata-v2"
+output_dir_v2 = "./myllama2model-ourdata-v2"
 print('Saving the model and tokenizer...')
 model_to_save.save_pretrained(output_dir_v2)
 tokenizer.save_pretrained(output_dir_v2)
@@ -368,22 +396,22 @@ from peft import PeftConfig, PeftModel
 
 finetuned_model = trainer.model
 
-text4 = "A 25-year-old female presents with swelling, pain, and inability to bear weight on her left ankle following a fall during a basketball game where she landed awkwardly on her foot. The pain is on the outer side of her ankle. What is the likely diagnosis and next steps?"
-inputs = tokenizer(text4, return_tensors="pt").to("cuda:0")
-outputs = finetuned_model.generate(input_ids=inputs.input_ids, max_new_tokens=75)
-print(tokenizer.decode(outputs[0], skip_special_tokens=True))
+text4 = "What is the national bird of US ?"
+askonce(text4)
 
-text5 = "where is the food service nearby?"
-inputs = tokenizer(text5, return_tensors="pt").to("cuda:0")
-outputs = finetuned_model.generate(input_ids=inputs.input_ids, max_new_tokens=75)
-print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
+text5 = "What is PPD depression? "
+askonce(text5)
+
+text6 = "How to prevent PPD depression?"
+askonce(text6)
 
 class ConversationMemory:
     def __init__(self):
         # Set maxlen to 2 to keep only the most recent two entries
-        self.history = deque([], maxlen=2)
+        #self.history = deque([], maxlen=2)
 
+        self.history = deque([], maxlen=1)
     def update_user_input(self, input_text):
         # Truncate the text to 20% if it is too long
         if len(input_text) > 100:  # Assuming 'too long' means more than 100 characters

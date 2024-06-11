@@ -31,8 +31,7 @@ print('load env')
 load_dotenv()
 # Retrieve API key
 hf_auth = os.getenv("HF_wr")
-#hf_auth = "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"
-#login(token=hf_auth)
+
 print('login ....')
 login(token=hf_auth,add_to_git_credential=True)
 
