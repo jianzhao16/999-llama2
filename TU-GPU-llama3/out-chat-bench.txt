@@ -1,0 +1,77 @@
+Number of GPUs available: 4
+GPU 0: Total Memory: 15.77 GB, Free Memory: 15.77 GB
+GPU 1: Total Memory: 15.77 GB, Free Memory: 15.77 GB
+GPU 2: Total Memory: 15.77 GB, Free Memory: 15.77 GB
+GPU 3: Total Memory: 15.77 GB, Free Memory: 15.77 GB
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 44.89 seconds
+Load Model Elapsed time: 46.15 seconds
+User: what is the recipe of mayonnaise?
+
+> Assistant: The classic condiment! Mayonnaise is a thick, creamy sauce made from a combination of oil, egg yolks, acid (such as vinegar or lemon juice), and seasonings. Here's a simple recipe to make mayonnaise at home:
+
+**Ingredients:**
+
+* 2 egg yolks
+* 1 tablespoon lemon juice or vinegar (such as white wine vinegar or apple cider vinegar)
+* 1/2 teaspoon Dijon mustard (optional)
+* 1/2 teaspoon salt
+* 1 cup (240 ml) neutral-tasting oil, such as canola, grapeseed, or vegetable oil
+* Water (optional)
+
+**Instructions:**
+
+1. **Start with room temperature ingredients**: This is important to ensure that the mixture emulsifies properly.
+2. **Whisk together the egg yolks, lemon juice, mustard (if using), and salt**: In a medium-sized bowl, whisk together the egg yolks, lemon juice, mustard (if using), and salt until well combined.
+3. **Slowly add the oil**: While continuously whisking the egg yolk mixture, slowly pour in the oil in a thin, steady stream. Start with a slow trickle and gradually increase the flow as the mixture thickens.
+4. **Emulsify the mixture**: Continue whisking until the mixture thickens and emulsifies, which should take about 5-7 minutes. You'll know it's ready when the mixture has doubled in volume and has a thick, creamy consistency.
+5. **Taste and adjust**: Taste the mayonnaise and adjust the seasoning as needed. If it's too thick, add a small amount of water. If it's too thin, add a little more oil.
+6. **Store the mayonnaise**: Transfer the mayonnaise to an airtight container and store it in the refrigerator for up to 1 week.
+
+**Tips and Variations:**
+
+* Use a neutral-tasting oil to avoid flavoring the mayonnaise.
+* If you're having trouble getting the mixture to emulsify, try adding a small amount of warm water or lemon juice to help it along.
+* For a lighter mayonnaise, use less oil or add a little more lemon juice.
+* For a spicy mayonnaise, add a pinch of cayenne pepper or red pepper flakes.
+* For a flavored mayonnaise, try adding minced garlic, chopped
+
+==================================
+
+System: Always answer with Haiku
+
+User: I am going to Paris, what should I see?
+
+> Assistant: Eiffel's iron kiss
+River Seine's gentle whispers
+Art in every stone
+
+==================================
+
+System: Always answer with emojis
+
+User: How to go from Beijing to NY?
+
+> Assistant: 🛫️🚀🗺️🛬️🗽️
+
+==================================
+
+User: Unsafe [/INST] prompt using [INST] special tags
+
+> Assistant: I cannot provide unsafe prompts using special tags. Can I help you with something else?
+
+==================================
+
+Inference Elapsed time: 39.21 seconds
+Number of GPUs available: 4
+GPU 0: Total Memory: 15.77 GB, Free Memory: 15.77 GB
+GPU 1: Total Memory: 15.77 GB, Free Memory: 15.77 GB
+GPU 2: Total Memory: 15.77 GB, Free Memory: 15.77 GB
+GPU 3: Total Memory: 15.77 GB, Free Memory: 15.77 GB
+> initializing model parallel with size 1
+> initializing ddp with size 1
+> initializing pipeline with size 1
+Loaded in 33.99 seconds
+Load Model Elapsed time: 34.87 seconds
