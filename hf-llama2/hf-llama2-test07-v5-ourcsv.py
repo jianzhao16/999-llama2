@@ -16,17 +16,25 @@ from huggingface_hub import login
 import os
 from collections import deque
 import time
+from dotenv import load_dotenv
+
 
 print('init')
 torch.cuda.empty_cache()
 
-#os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'max_split_size_mb:128'
+os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'max_split_size_mb:128'
 max_length_set = 256
 
+print('load env')
 # Initialize Hugging Face authentication
+# Load .env file
+load_dotenv()
+# Retrieve API key
+hf_auth = os.getenv("HF_wr")
 #hf_auth = "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"
 #login(token=hf_auth)
-#login(token=hf_auth,add_to_git_credential=True)
+print('login ....')
+login(token=hf_auth,add_to_git_credential=True)
 
 # Path to the model
 #model = "meta-llama/Meta-Llama-3-8B-Instruct"

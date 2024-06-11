@@ -9,4 +9,5 @@ pip install torch==2.0.1
 pip install scipy
 pip install streamlit
 pip install fastapi uvicorn transformers torch
+pip install python-dotenv
 
