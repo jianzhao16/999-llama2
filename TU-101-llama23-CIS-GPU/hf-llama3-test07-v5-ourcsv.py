@@ -38,6 +38,7 @@ login(token=hf_auth,add_to_git_credential=True)
 # Path to the model
 #model = "meta-llama/Meta-Llama-3-8B-Instruct"
 model  = 'Base-Llama-3-8B-Instruct'
+max_new_tokens=128
 #model = 'Base-Llama-2-7b-chat-hf'
 print(model)
 # model_name = "/home/tus35240/.cache/huggingface/hub/models--meta-llama--Meta-Llama-3-8B/snapshots/62bd457b6fe961a42a631306577e622c83876cb6"
@@ -496,7 +497,11 @@ try:
         last_message_content = last_message['content']  # This accesses the 'content' key in the dictionary
 
 
-        output_text = generate_text(finetuned_model, tokenizer, last_message_content, max_new_tokens=128)
+        #output_text = generate_text(finetuned_model, tokenizer, last_message_content, max_new_tokens=128)
+        inputs = tokenizer(last_message_content, return_tensors="pt").to("cuda:0")
+        outputs = finetuned_model.generate(input_ids=inputs.input_ids, attention_mask=inputs.attention_mask,
+                                 max_new_tokens=max_new_tokens)
+        output_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
         #print('ourput_text:', output_text)
 
         results = [{'generation': {'role': 'assistant', 'content': output_text}}]

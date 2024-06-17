@@ -1,0 +1,19 @@
+# Remove existing Node.js version (if necessary)
+sudo apt remove nodejs
+
+# Install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+source ~/.bashrc  # or source ~/.zshrc if you are using zsh
+
+# Install Node.js version 16
+nvm install 16
+nvm use 16
+nvm alias default 16
+
+# Verify installation
+node --version
+npm --version
+
+# Navigate to your project directory and install dependencies
+cd ~/mygit/gpt4-playground
+yarn install

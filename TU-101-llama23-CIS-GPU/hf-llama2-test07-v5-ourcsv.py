@@ -38,6 +38,7 @@ login(token=hf_auth,add_to_git_credential=True)
 # Path to the model
 #model = "meta-llama/Meta-Llama-3-8B-Instruct"
 model = 'Base-Llama-2-7b-chat-hf'
+max_new_tokens=128
 #model = 'meta-llama/Llama-2-7b-chat-hf'
 print(model)
 # model_name = "/home/tus35240/.cache/huggingface/hub/models--meta-llama--Meta-Llama-3-8B/snapshots/62bd457b6fe961a42a631306577e622c83876cb6"
@@ -407,7 +408,7 @@ class ConversationMemory:
         # Set maxlen to 2 to keep only the most recent two entries
         #self.history = deque([], maxlen=2)
 
-        self.history = deque([], maxlen=1)
+        self.history = deque([], maxlen=2)
     def update_user_input(self, input_text):
         # Truncate the text to 20% if it is too long
         if len(input_text) > 100:  # Assuming 'too long' means more than 100 characters
@@ -449,7 +450,7 @@ def generate_text(model, tokenizer, text, max_new_tokens=128):
     outputs = model.generate(input_ids=inputs.input_ids, attention_mask=inputs.attention_mask, max_new_tokens=max_new_tokens)
     return tokenizer.decode(outputs[0], skip_special_tokens=True)
 
-print('Begin testing fine-tuned model')
+print('Begin to test fine-tuned model')
 
 
 # while True:
@@ -520,7 +521,12 @@ try:
         last_message_content = last_message['content']  # This accesses the 'content' key in the dictionary
 
 
-        output_text = generate_text(finetuned_model, tokenizer, last_message_content, max_new_tokens=128)
+        #output_text = generate_text(last_message_content, max_new_tokens=128)
+        inputs = tokenizer(last_message_content, return_tensors="pt").to("cuda:0")
+        outputs = finetuned_model.generate(input_ids=inputs.input_ids, attention_mask=inputs.attention_mask,
+                                 max_new_tokens=max_new_tokens)
+        output_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+
         #print('ourput_text:', output_text)
 
         results = [{'generation': {'role': 'assistant', 'content': output_text}}]
@@ -546,14 +552,14 @@ try:
         # dialogs.append([{"role": "assistant", "content": results[0]['generation']['content']}])
 
         # print(dialogs[-1])
-        print("\n==================================\n")
-        print("Result Display: ")
+        #print("\n==================================\n")
+        #print("Result Display: ")
         # Display the conversation history
-        print("\n============== All History Display====================\n")
-        print(f"Conversation Memory: {conversation.display_history}")
+        #print("\n============== All History Display====================\n")
+        #print(f"Conversation Memory: {conversation.display_history}")
         # print(f"Conversation Memory: {conversation.get_conversation_prompt()}")
 
-        print("\n==============Cureent Answer====================\n")
+        print("\n==============Result Display====================\n")
         print("Results")
         # print(results)
         print(f"> {results[0]['generation']['role'].capitalize()}: {results[0]['generation']['content']}")
