@@ -69,6 +69,6 @@ if submit_button and user_query:
         ask_openai_for_service_extraction(user_query, api_key, st.session_state.conversation_history, output_placeholder)
         end_time = time.time()
         elapsed_time = end_time - start_time
-        st.write(f"Inference Elapsed time: {elapsed_time:.2f} seconds")
+        #st.write(f"Inference Elapsed time: {elapsed_time:.2f} seconds")
 
     asyncio.run(main())
